@@ -1,0 +1,182 @@
+html, body, main {
+    background-color: #301c07;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: calc(0.6em + 1vw);
+    color: rgb(230, 219, 219);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(230, 219, 219);
+    border-radius: 25px;
+    background: linear-gradient(145deg, #2b1906, #331e07);
+    box-shadow:  8px 8px 2px #130b03, 
+                 -8px -8px 2px #4d2d0b;
+}
+
+a:hover {
+    border-radius: 25px;
+    background: #301c07;
+    box-shadow: inset 8px 8px 2px #130b03, 
+                inset -8px -8px 2px #4d2d0b;
+}
+
+.jumbotron {
+    margin-top: 0;
+    padding-top: 0;
+    height: 90vh;
+    background-image: url("assets/img/globe.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0% 80%, 0% 0%, 100% 0%, 100% 100%);
+}
+
+.jumbotron h1 {
+    margin: 0;
+    padding: 10vh 0 0 0;
+    text-align: center;
+    font-size: 10vw;
+    font-family: 'Rock Salt', cursive;
+    color: rgb(73, 7, 7);
+    text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+}
+
+.jumbotron h3 {
+    margin: 0;
+    padding: 1vh 0 0 0;
+    text-align: center;
+    font-size: 4vw;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(105, 20, 20);
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.5136px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
+}
+
+.object-box {
+    opacity: 0;
+
+    width: 80%;
+
+    margin: 2em auto;
+    padding-top: 2em;
+
+    display: flex;
+    flex-direction: row;
+
+    border-radius: 90px;
+    background: linear-gradient(145deg, #331e07, #2b1906);
+    box-shadow:  9px 9px 3px #1d1104, 
+                -9px -9px 3px #43270a;
+}
+
+.object-box a {
+    text-align: center;
+    margin-bottom: 1em;
+    padding: 5px;
+}
+.object-box img {
+    margin: 1em;
+    border-radius: 16px;
+    border: 2px solid black;
+    height: 100%;
+}
+
+.headline {
+    margin: 0 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.headline h3 {
+    text-align: center;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3vw;
+}
+
+.avatar {
+    height: 30vh;
+    border: 2px solid black;
+    border-radius: 180px;
+}
+
+.homePage {
+    background-image: url(./assets/img/shattered.png);
+    background-repeat: repeat;
+}
+
+.batonPass {
+    background-image: url(./assets/img/paper-1.png);
+    background-repeat: repeat;
+}
+
+.passGen {
+    background-image: url(./assets/img/diamond-upholstery.png);
+    background-repeat: repeat;
+}
+
+.weatherSearch {
+    background-image: url(./assets/img/skulls.png);
+    background-repeat: repeat;
+}
+
+.burgerEat {
+    background-image: url(./assets/img/food.png);
+    background-repeat: repeat;
+}
+
+/* CSS scroll animation code */
+
+/** ----//
+*  @group standaard animaties
+*  @author @david
+*/
+
+/* Trigger  */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    }
+  
+  /* Optional Delays, change values here  */
+  .one { animation-delay: 0.2s; }
+  .two { animation-delay: .6s; }
+  .three { animation-delay: 1s; }
+  .four { animation-delay: 1.4s; }
+  
+  /* Animations start here  */
+  
+  /* FADE IN RIGHT */
+  
+  @keyframes fadeInRight {
+    from { opacity: 0; transform: translate3d(100%, 0, 0); }
+    to { opacity: 1; transform: none; } }
+  .fadeInRight { animation-name: fadeInRight; }
+  
+  /* @end standaard animaties  */
+
+  .in-view {
+      animation: fadeInRight;
+      animation-duration: 2.5s;
+      animation-delay: 0s;
+      animation-fill-mode: both;
+      backface-visibility: hidden;
+  }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .object-box {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .object-box img {
+        margin-bottom: 5em;
+    }
+  }
