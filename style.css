@@ -23,6 +23,21 @@ a:hover {
                 inset -8px -8px 2px #4d2d0b;
 }
 
+.plain {
+    text-decoration: none;
+    color: rgb(230, 219, 219);
+    border: none;
+    background: none;
+    box-shadow: none;
+    color: rgb(159, 159, 235);
+}
+
+.plain:hover {
+    background: none;
+    box-shadow: none;
+    color: rgb(73, 7, 7);
+}
+
 .jumbotron {
     margin-top: 0;
     padding-top: 0;
@@ -97,6 +112,11 @@ a:hover {
     display: flex;
     flex-direction: row;
     margin-left: 3vw;
+}
+
+.bio {
+    margin-left: 0.5em;
+    opacity: 0;
 }
 
 .avatar {
