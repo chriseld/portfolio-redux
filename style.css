@@ -130,6 +130,13 @@ a:hover {
     background-repeat: repeat;
 }
 
+.footer {
+    opacity: 1;
+    text-align: center;
+    justify-content: center;
+    font-size: calc(0.3em + 1vw);
+}
+
 /* CSS scroll animation code */
 
 /** ----//
@@ -170,6 +177,10 @@ a:hover {
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
+    html, body {
+        font-size: calc(1em + 1vw);
+    }
+
     .object-box {
         flex-direction: column;
         justify-content: center;
@@ -178,5 +189,9 @@ a:hover {
 
     .object-box img {
         margin-bottom: 5em;
+    }
+
+    .ModuleImg {
+        width: 90%;
     }
   }
