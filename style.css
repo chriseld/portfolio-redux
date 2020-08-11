@@ -29,13 +29,16 @@ a:hover {
     border: none;
     background: none;
     box-shadow: none;
-    color: rgb(159, 159, 235);
+    color: rgb(48, 48, 226);
+    font-weight: bold;
 }
 
 .plain:hover {
     background: none;
     box-shadow: none;
-    color: rgb(73, 7, 7);
+    color: rgb(48, 48, 226);
+    background-color: cadetblue;
+    padding: 0 5px;
 }
 
 .jumbotron {
