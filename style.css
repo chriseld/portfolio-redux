@@ -153,6 +153,11 @@ a:hover {
     background-repeat: repeat;
 }
 
+.tictactoe {
+    background-image: url(./assets/img/asfalt-light.png);
+    background-repeat: repeat;
+}
+
 .footer {
     opacity: 1;
     text-align: center;
