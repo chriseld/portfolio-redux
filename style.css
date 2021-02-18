@@ -158,6 +158,11 @@ a:hover {
     background-repeat: repeat;
 }
 
+.chat {
+    background-image: url(./assets/img/chatappbg.png);
+    background-repeat: repeat;
+}
+
 .footer {
     opacity: 1;
     text-align: center;
