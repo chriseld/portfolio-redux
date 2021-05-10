@@ -1,25 +1,55 @@
 import React, { useState } from 'react';
+
+import { useSelector, useDispatch } from 'react-redux';
+
 import './App.css';
 import {LoginModal} from './Components/LoginModal';
 import {RegisterModal} from './Components/RegisterModal';
 
 function App() {
 
+  const isLogged = useSelector(state => state.isLogged);
+  const dispatch = useDispatch();
+
   const [login, setLogin] = useState(false);
   const [register, setRegister] = useState(false);
 
-  return (
-    <div className="app">
+  const homeGuest = () => {
+    return(
+      <>
       <button id="login" onClick={() => setLogin(true)}>Login</button>
       <button id="register" onClick={() => setRegister(true)}>Register</button>
+      </>
+    )
+  }
 
-      <LoginModal title="Login" onClose={() => setLogin(false)} show={login}>
-        <p>LoginModal content</p>
-      </LoginModal>
+  const homeUser = () => {
+    return(
+      <button onClick={(()=> dispatch({type:'LOG_OUT'}))}>Log Out</button>
+    )
+  }
 
-      <RegisterModal title="Register" onClose={() => setRegister(false)} show={register}>
-        <p>RegisterModal content</p>
-      </RegisterModal>
+  const loginMenu = () => {
+    if(isLogged) {
+      return homeUser();
+    } else {
+      return homeGuest();
+    }
+  }
+
+  return (
+    <div className="app">
+      
+      {/* <button id="login" onClick={() => setLogin(true)}>Login</button>
+      <button id="register" onClick={() => setRegister(true)}>Register</button> */}
+
+      {loginMenu()}
+
+      {/* <button onClick={(()=> dispatch({type:'LOG_IN'}))}>FLIP STATE</button> */}
+
+      <LoginModal onClose={() => setLogin(false)} show={login} />
+
+      <RegisterModal onClose={() => setRegister(false)} show={register} />
    </div>
   );
 }

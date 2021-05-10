@@ -43,3 +43,24 @@
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
 }
+
+.modal-footer {
+    text-align: right;
+}
+
+.FormikElement {
+    margin-top: 7px;
+}
+
+.input-error {
+    border-color: red;
+}
+
+.error {
+    color: red;
+}
+
+Form button {
+    margin-top: 15px;
+}
+
