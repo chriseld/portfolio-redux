@@ -163,6 +163,11 @@ a:hover {
     background-repeat: repeat;
 }
 
+.login {
+    background-image: url(./assets/img/loginbg.png);
+    background-repeat: repeat;
+}
+
 .footer {
     opacity: 1;
     text-align: center;
