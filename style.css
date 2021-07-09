@@ -168,6 +168,11 @@ a:hover {
     background-repeat: repeat;
 }
 
+.tenpenny {
+    background-image: url(./assets/img/cardboard.png);
+    background-repeat: repeat;
+}
+
 .footer {
     opacity: 1;
     text-align: center;
